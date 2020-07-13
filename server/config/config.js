@@ -19,7 +19,7 @@ let urlDB;
 if( process.env.NODE_ENV === 'dev' ){
     urlDB = 'mongodb://localhost:27017/curso';
 }else{
-    urlDB = 'mongodb+srv://AndresLo:fGpfMhHOATJqHEog@proyectos.2liaq.mongodb.net/curso';
+    urlDB = process.env.MONGO_URL;
 }
 
 process.env.URLDB = urlDB;
