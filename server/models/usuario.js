@@ -45,6 +45,8 @@ let usuarioSchema = new Schema({
     }
 });
  
+
+//Exclusion de contraseña
  
 usuarioSchema.methods.toJSON = function() {
  
